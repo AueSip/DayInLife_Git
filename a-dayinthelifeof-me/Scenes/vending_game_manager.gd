@@ -142,8 +142,8 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("Right"):
 		HandleMinigameCompletion(true)
 		ShakeAnim()
-	
-	
+	if Input.is_action_just_pressed("Escape"):
+		get_tree().change_scene_to_file("res://Scenes/StartScreen.tscn")	
 func HandleMinigameCompletion(won:bool):
 	print("SUCCEEDED MINIGAME")
 	$CanvasLayer/Request.visible = true;
@@ -177,8 +177,10 @@ func HandleEnd():
 		GV.coins = coinCount
 		GV.score = CountScore
 		GV.MonstersCollected = monstersCollected;
-	get_tree().change_scene_to_file("res://Scenes/StartScreen.tscn.tscn")
-	
+	get_tree().change_scene_to_file("res://Scenes/StartScreen.tscn")
+
+
+
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if (body.is_in_group("Monster")):
 		UpdateScore(body)
