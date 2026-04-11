@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://3lnr3dyrkrja"]
+
+[ext_resource type="PackedScene" uid="uid://dnsjie5d8hg31" path="res://Models/VendingMachine.fbx" id="1_yproy"]
+[ext_resource type="Material" uid="uid://b404mkg6fgwvy" path="res://Materials/Vend.tres" id="2_4lt3k"]
+[ext_resource type="Material" uid="uid://cdqiumjhc8b7b" path="res://Materials/VendTransP.tres" id="3_13q2f"]
+
+[node name="VendingMachine" unique_id=222549099 instance=ExtResource("1_yproy")]
+
+[node name="Cube" parent="." index="0" unique_id=2007099527]
+surface_material_override/0 = ExtResource("2_4lt3k")
+surface_material_override/1 = ExtResource("2_4lt3k")
+surface_material_override/2 = ExtResource("3_13q2f")
+
+[node name="Cube_001" parent="." index="1" unique_id=374954615]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_002" parent="." index="2" unique_id=989011334]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_003" parent="." index="3" unique_id=1500384581]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_004" parent="." index="4" unique_id=2082938589]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_005" parent="." index="5" unique_id=1749453080]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_006" parent="." index="6" unique_id=85295290]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_007" parent="." index="7" unique_id=1111493962]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_008" parent="." index="8" unique_id=2033622376]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_009" parent="." index="9" unique_id=50508911]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_010" parent="." index="10" unique_id=586937652]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_011" parent="." index="11" unique_id=1144020462]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_012" parent="." index="12" unique_id=133936485]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_013" parent="." index="13" unique_id=1047895720]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_014" parent="." index="14" unique_id=838633857]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_015" parent="." index="15" unique_id=1658966359]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_016" parent="." index="16" unique_id=177635913]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_017" parent="." index="17" unique_id=1990384142]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_018" parent="." index="18" unique_id=1966258330]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_019" parent="." index="19" unique_id=1660910330]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_020" parent="." index="20" unique_id=1063057716]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_021" parent="." index="21" unique_id=1945318496]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_022" parent="." index="22" unique_id=611859446]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_023" parent="." index="23" unique_id=2023226363]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_024" parent="." index="24" unique_id=400348254]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Cube_025" parent="." index="25" unique_id=1263967806]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Detailing" parent="." index="26" unique_id=439150242]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Detailing_001" parent="." index="27" unique_id=19437189]
+surface_material_override/0 = ExtResource("2_4lt3k")
+
+[node name="Keypad" parent="." index="28" unique_id=382415542]
+surface_material_override/0 = ExtResource("2_4lt3k")

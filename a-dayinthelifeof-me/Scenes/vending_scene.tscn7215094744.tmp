@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://tp8gbv0xkb3p"]
+
+[ext_resource type="Script" uid="uid://cr7cvhmihs30r" path="res://Scenes/vending_game_manager.gd" id="1_gcjjy"]
+[ext_resource type="PackedScene" uid="uid://dnsjie5d8hg31" path="res://Models/VendingMachine.fbx" id="1_or5bg"]
+[ext_resource type="PackedScene" uid="uid://7it1fdx5jnfm" path="res://Scenes/Pieces/VendingSlot.tscn" id="2_gcjjy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_33qso"]
+
+[node name="VendingScene" type="Node3D" unique_id=1764393025]
+script = ExtResource("1_gcjjy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1629012620]
+transform = Transform3D(24.285593, 0, 0, 0, 0.11045013, 0, 0, 0, 16.34943, 0, 0, 0)
+mesh = SubResource("BoxMesh_33qso")
+
+[node name="VendingMachine" parent="." unique_id=892747532 instance=ExtResource("1_or5bg")]
+transform = Transform3D(-1.664466e-08, 0, -0.38078544, 0, 0.3807854, 0, 0.38078544, 0, -1.664466e-08, 0.07654554, 0.29787827, -0.7929523)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=488020638]
+transform = Transform3D(1, 0, 0, 0, 0.9887929, 0.14929375, 0, -0.14929375, 0.9887929, 0, 3.4896152, 3.546929)
+
+[node name="Slots" type="Node" parent="." unique_id=1395312055]
+
+[node name="VendingSlot" parent="Slots" unique_id=627040347 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 4.2212214, -0.9563484)
+
+[node name="VendingSlot2" parent="Slots" unique_id=724377282 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 4.2212214, -0.9563484)
+
+[node name="VendingSlot3" parent="Slots" unique_id=751568181 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 4.2212214, -0.9563484)
+
+[node name="VendingSlot4" parent="Slots" unique_id=94631338 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 4.2212214, -0.9563484)
+
+[node name="VendingSlot5" parent="Slots" unique_id=805047291 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 4.2212214, -0.9563484)
+
+[node name="VendingSlot6" parent="Slots" unique_id=1532059209 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 3.5416408, -0.9563484)
+
+[node name="VendingSlot7" parent="Slots" unique_id=1143182892 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 3.5416408, -0.9563484)
+
+[node name="VendingSlot8" parent="Slots" unique_id=1033739281 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 3.5416408, -0.9563484)
+
+[node name="VendingSlot9" parent="Slots" unique_id=694437500 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 3.5416408, -0.9563484)
+
+[node name="VendingSlot10" parent="Slots" unique_id=1030660658 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 3.5416408, -0.9563484)
+
+[node name="VendingSlot11" parent="Slots" unique_id=846500570 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 2.8857193, -0.9563484)
+
+[node name="VendingSlot12" parent="Slots" unique_id=1275925107 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 2.8857193, -0.9563484)
+
+[node name="VendingSlot13" parent="Slots" unique_id=2032350782 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 2.8857193, -0.9563484)
+
+[node name="VendingSlot14" parent="Slots" unique_id=498833085 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 2.8857193, -0.9563484)
+
+[node name="VendingSlot15" parent="Slots" unique_id=1071864054 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 2.8857193, -0.9563484)
+
+[node name="VendingSlot16" parent="Slots" unique_id=148030262 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 2.1964126, -0.9563484)
+
+[node name="VendingSlot17" parent="Slots" unique_id=1132859152 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 2.1964126, -0.9563484)
+
+[node name="VendingSlot18" parent="Slots" unique_id=109712790 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 2.1964126, -0.9563484)
+
+[node name="VendingSlot19" parent="Slots" unique_id=647289011 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 2.1964126, -0.9563484)
+
+[node name="VendingSlot20" parent="Slots" unique_id=1175412098 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 2.1964126, -0.9563484)
+
+[node name="VendingSlot21" parent="Slots" unique_id=1103458677 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 1.3726526, -0.9563484)
+
+[node name="VendingSlot22" parent="Slots" unique_id=779447080 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 1.3726526, -0.9563484)
+
+[node name="VendingSlot23" parent="Slots" unique_id=2126945867 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 1.3726526, -0.9563484)
+
+[node name="VendingSlot24" parent="Slots" unique_id=183076758 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 1.3726526, -0.9563484)
+
+[node name="VendingSlot25" parent="Slots" unique_id=472066972 instance=ExtResource("2_gcjjy")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 1.3726526, -0.9563484)

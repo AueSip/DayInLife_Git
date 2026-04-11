@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dbeo2ce1ovt45"]
+
+[ext_resource type="Texture2D" uid="uid://3tbyda58xd1b" path="res://Ext.png" id="1_04yja"]
+[ext_resource type="Script" uid="uid://bki0hidejh538" path="res://Scenes/WallScript.gd" id="2_04yja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b864j"]
+size = Vector2(1848.8346, 1038.8562)
+
+[node name="Exit" type="Sprite2D" unique_id=1307443238 groups=["WinZone"]]
+modulate = Color(0.5436834, 1, 0.5606212, 1)
+scale = Vector2(0.1038492, 0.09240933)
+texture = ExtResource("1_04yja")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=460240446 groups=["WinZone"]]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1392263056]
+shape = SubResource("RectangleShape2D_b864j")
+disabled = true
+script = ExtResource("2_04yja")
+
+[connection signal="visibility_changed" from="." to="Area2D/CollisionShape2D" method="_on_visibility_changed"]

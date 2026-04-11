@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://7it1fdx5jnfm"]
+
+[ext_resource type="Script" uid="uid://c6c4qb8m36yl8" path="res://Scenes/Pieces/vending_slot.gd" id="1_n8cpm"]
+[ext_resource type="PackedScene" uid="uid://4fpmofnmpf46" path="res://Scenes/Pieces/Physics_Monster.tscn" id="2_2kx7w"]
+[ext_resource type="Script" uid="uid://bjgip8jf0gp5w" path="res://Scenes/Pieces/front_piece.gd" id="3_wtehu"]
+[ext_resource type="AudioStream" uid="uid://dvgqjud655idu" path="res://SFX/DayInLife_Slide.wav" id="4_0a4sm"]
+[ext_resource type="FontFile" uid="uid://n4bkjrn8lcum" path="res://Fonts/Play Pretend.otf" id="4_eyhss"]
+[ext_resource type="Script" uid="uid://t8rv0bqe3nwq" path="res://Scenes/SoundHandler.gd" id="5_eyhss"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fyp5d"]
+size = Vector3(5.6673584, 4.6539917, 1.3121834)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n8cpm"]
+size = Vector3(7.655834, 0.09375, 4.133789)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2kx7w"]
+size = Vector3(8.564087, 2.5950928, 0.76782227)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wtehu"]
+size = Vector3(8.544556, 2.5950928, 0.76782227)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0a4sm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eyhss"]
+albedo_color = Color(0.038397167, 0.038397167, 0.03839716, 1)
+metallic = 0.77
+metallic_specular = 0.54
+roughness = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eyhss"]
+size = Vector3(0.25390625, 1, 1)
+
+[node name="VendingSlot" type="Node3D" unique_id=627040347]
+script = ExtResource("1_n8cpm")
+MonsterScene = ExtResource("2_2kx7w")
+
+[node name="DOwnPos" type="Node3D" parent="." unique_id=2083476222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.160318, -1.7674665, 0)
+
+[node name="UpPos" type="Node3D" parent="." unique_id=289592839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.160318, 0.07594037, 0)
+
+[node name="Slot1" type="Node3D" parent="." unique_id=127435697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1523418, 0, 0)
+
+[node name="Slot5" type="Node3D" parent="." unique_id=1508089254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.293481, 0, 0)
+
+[node name="Slot2" type="Node3D" parent="." unique_id=1644752252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13914788, 0, 0)
+
+[node name="Slot3" type="Node3D" parent="." unique_id=1138608256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0254998, 0, 0)
+
+[node name="Slot4" type="Node3D" parent="." unique_id=1720795304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9345286, 0, 0)
+
+[node name="PushSlot" type="Node3D" parent="." unique_id=1863373251]
+transform = Transform3D(-2.2577881e-08, 0, -1, 0, 1, 0, 0.5165217, 0, -4.371139e-08, -7.9813004, 0.8832586, -0.03093326)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="PushSlot" unique_id=1821177211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -2.7888802e-13, 0, 1, -0.1990358, 1.02944, -1.6056471)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="PushSlot/StaticBody3D" unique_id=446634360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.6164847e-13, 0, 1, 2.682209e-07, 0, 0.92551565)
+shape = SubResource("BoxShape3D_fyp5d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=800169539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19525146, -0.32958984, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2071488817]
+transform = Transform3D(0.998925, 0.04635678, 0, -0.04635678, 0.998925, 0, 0, 0, 1, -1.2233524, -0.28375316, 0)
+shape = SubResource("BoxShape3D_n8cpm")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=139014657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.79071045, 1.3290136, -1.6603001)
+shape = SubResource("BoxShape3D_2kx7w")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=947330478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7809448, 1.1271362, 1.5142887)
+shape = SubResource("BoxShape3D_wtehu")
+
+[node name="FrontPiece" type="MeshInstance3D" parent="." unique_id=734364956 node_paths=PackedStringArray("PushPiece", "PositionNodes", "UpDown")]
+transform = Transform3D(0.40429896, 0, 0, 0, 1.4076045, 0, 0, 0, 3.5633364, 3.160318, 0.07594037, 0)
+mesh = SubResource("BoxMesh_0a4sm")
+surface_material_override/0 = SubResource("StandardMaterial3D_eyhss")
+script = ExtResource("3_wtehu")
+PushPiece = NodePath("../PushSlot")
+PositionNodes = [NodePath("../Slot4"), NodePath("../Slot3"), NodePath("../Slot2"), NodePath("../Slot1"), NodePath("../Slot5")]
+UpDown = [NodePath("../UpPos"), NodePath("../DOwnPos")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FrontPiece" unique_id=1075912548]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrontPiece/StaticBody3D" unique_id=935318472]
+transform = Transform3D(1, 0, 0, 0, 1.000007, 0, 0, 0, 1.0000008, -0.37304688, 0, 0)
+shape = SubResource("BoxShape3D_eyhss")
+
+[node name="Label3D" type="Label3D" parent="FrontPiece" unique_id=428661173]
+transform = Transform3D(7.371358e-08, 0, 2.4734173, 0, 0.7104271, 0, -0.28063595, 0, 8.363603e-09, 0.54382515, 0.042262282, 0)
+ignore_occlusion_culling = true
+text = "64"
+font = ExtResource("4_eyhss")
+font_size = 211
+
+[node name="SlideSFX" type="AudioStreamPlayer3D" parent="." unique_id=1247701827]
+transform = Transform3D(0.9997585, 0.017767865, 0.01293506, -0.017743304, 0.9998406, -0.0020109983, -0.012968729, 0.0017810017, 0.99991435, 3.6694646, 0.2907188, 0)
+stream = ExtResource("4_0a4sm")
+script = ExtResource("5_eyhss")
+
+[connection signal="finished" from="SlideSFX" to="SlideSFX" method="_on_finished"]

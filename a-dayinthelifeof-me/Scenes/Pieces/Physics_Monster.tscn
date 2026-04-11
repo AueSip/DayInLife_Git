@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://4fpmofnmpf46"]
+
+[ext_resource type="Script" uid="uid://ciptk18k6nfyd" path="res://Models/Use/monster_can.gd" id="1_dkyyr"]
+[ext_resource type="PackedScene" uid="uid://b3k6mtnpg71al" path="res://Models/Use/monster_can.tscn" id="1_rc5wp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dkyyr"]
+load_path = "res://.godot/imported/MonsterCan_DefaultMaterial_BaseColor.png-207fd9a9b17dccecf9aa156d23620e01.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w6u7t"]
+load_path = "res://.godot/imported/MonsterCan_DefaultMaterial_Normal.png-b9a7e633154411ea4573ced14fedcca2.s3tc.ctex"
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_tvw34"]
+albedo_texture = SubResource("CompressedTexture2D_dkyyr")
+normal_texture = SubResource("CompressedTexture2D_w6u7t")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dkyyr"]
+size = Vector3(1.5634766, 4.161865, 1.7060547)
+
+[node name="PhysicsMonster" type="Node3D" unique_id=514764301 groups=["Monster"]]
+script = ExtResource("1_dkyyr")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=907488694 groups=["Monster"]]
+mass = 0.5
+can_sleep = false
+continuous_cd = true
+
+[node name="MonsterCan" parent="RigidBody3D" unique_id=576905911 instance=ExtResource("1_rc5wp")]
+
+[node name="Cylinder" parent="RigidBody3D/MonsterCan" index="0" unique_id=1612830014]
+surface_material_override/0 = SubResource("ORMMaterial3D_tvw34")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=113344142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2205486, 0)
+shape = SubResource("BoxShape3D_dkyyr")
+
+[editable path="RigidBody3D/MonsterCan"]

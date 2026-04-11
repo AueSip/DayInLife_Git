@@ -1,0 +1,12 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://8vpq1qb1gqsf"]
+
+[ext_resource type="Texture2D" uid="uid://cga2q500sfiu" path="res://Textures/Wall/Wall_Material.001_BaseColor.png" id="1_wc6c8"]
+[ext_resource type="Texture2D" uid="uid://ytcd0pxu31ra" path="res://Textures/Wall/Wall_Material.001_Normal.png" id="2_h4s10"]
+[ext_resource type="Texture2D" uid="uid://b6chp0db1h1tw" path="res://Textures/Wall/Wall_Material.001_OcclusionRoughnessMetallic.png" id="3_pj57c"]
+
+[resource]
+depth_draw_mode = 1
+albedo_texture = ExtResource("1_wc6c8")
+orm_texture = ExtResource("3_pj57c")
+normal_enabled = true
+normal_texture = ExtResource("2_h4s10")

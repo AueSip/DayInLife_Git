@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://kkghkhx1x11b"
+path="res://.godot/imported/Quadrant -140bpm - B.mp3-bf4c9c703a1a4600f5910a9186f6e3b9.mp3str"
+
+[deps]
+
+source_file="res://SFX/Quadrant -140bpm - B.mp3"
+dest_files=["res://.godot/imported/Quadrant -140bpm - B.mp3-bf4c9c703a1a4600f5910a9186f6e3b9.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

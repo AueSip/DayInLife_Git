@@ -1,0 +1,391 @@
+[gd_scene format=3 uid="uid://bjln1fjawyjx8"]
+
+[ext_resource type="Script" uid="uid://dt4okhtqdjix1" path="res://Scenes/start_screen.gd" id="1_ko4ly"]
+[ext_resource type="FontFile" uid="uid://n4bkjrn8lcum" path="res://Fonts/Play Pretend.otf" id="2_2sbhq"]
+[ext_resource type="PackedScene" uid="uid://b0gtiyyx4oe3n" path="res://Scenes/Pieces/GridOfButtons.tscn" id="2_aae8c"]
+[ext_resource type="Script" uid="uid://cr7cvhmihs30r" path="res://Scenes/vending_game_manager.gd" id="2_qg82j"]
+[ext_resource type="PackedScene" uid="uid://3lnr3dyrkrja" path="res://Models/Use/vending_machine.tscn" id="3_qg82j"]
+[ext_resource type="PackedScene" uid="uid://7it1fdx5jnfm" path="res://Scenes/Pieces/VendingSlot.tscn" id="5_i3sa8"]
+[ext_resource type="PackedScene" uid="uid://cu7ugdt7wibqs" path="res://Models/Use/chair.tscn" id="6_7ive4"]
+[ext_resource type="PackedScene" uid="uid://bvli7gif5o7tb" path="res://Models/Use/floor.tscn" id="7_kr8ks"]
+[ext_resource type="PackedScene" uid="uid://chvuwcij68jxu" path="res://Models/Use/Light.tscn" id="8_pmwbl"]
+[ext_resource type="PackedScene" uid="uid://b3k6mtnpg71al" path="res://Models/Use/monster_can.tscn" id="9_2n7fw"]
+[ext_resource type="PackedScene" uid="uid://v3boywnca3ws" path="res://Models/Use/roof.tscn" id="10_es5ds"]
+[ext_resource type="PackedScene" uid="uid://b22wr27myrdbq" path="res://Models/Use/wall.tscn" id="11_45r57"]
+[ext_resource type="AudioStream" uid="uid://kkghkhx1x11b" path="res://SFX/Quadrant -140bpm - B.mp3" id="12_qg82j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c632w"]
+size = Vector3(0.3010254, 12.924072, 6.937744)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_85jv8"]
+size = Vector3(3.5908203, 1, 3.196289)
+
+[sub_resource type="Environment" id="Environment_33qfa"]
+tonemap_mode = 3
+
+[node name="StartScreen" type="Node2D" unique_id=1430857639]
+script = ExtResource("1_ko4ly")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=978611041]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1314578736]
+offset_left = 481.0
+offset_top = 354.0
+offset_right = 682.0
+offset_bottom = 426.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 46
+text = "START"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=961945282]
+offset_left = 186.0
+offset_top = 124.0
+offset_right = 319.0
+offset_bottom = 182.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "SCORE"
+
+[node name="ScoreCount" type="Label" parent="CanvasLayer" unique_id=526419812]
+offset_left = 184.0
+offset_top = 175.0
+offset_right = 317.0
+offset_bottom = 233.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="MonsterCount" type="Label" parent="CanvasLayer" unique_id=1945898141]
+offset_left = 498.0
+offset_top = 175.0
+offset_right = 631.0
+offset_bottom = 233.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="CoinCount" type="Label" parent="CanvasLayer" unique_id=14318784]
+offset_left = 822.0
+offset_top = 171.0
+offset_right = 955.0
+offset_bottom = 229.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=574195109]
+offset_left = 450.0
+offset_top = 124.0
+offset_right = 675.0
+offset_bottom = 182.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "MONSTERS"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer" unique_id=219034400]
+offset_left = 820.0
+offset_top = 123.0
+offset_right = 953.0
+offset_bottom = 181.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_2sbhq")
+theme_override_font_sizes/font_size = 42
+text = "COINS"
+
+[node name="Node3D" type="Node3D" parent="." unique_id=465788849]
+script = ExtResource("2_qg82j")
+
+[node name="GridOfButtons" parent="Node3D" unique_id=1057915687 instance=ExtResource("2_aae8c")]
+transform = Transform3D(0.204, 0, 0, 0, 0.204, 0, 0, 0, 0.204, 1.2700229, 2.9685135, 0.024433255)
+
+[node name="VendingMachine2" parent="Node3D" unique_id=222549099 instance=ExtResource("3_qg82j")]
+transform = Transform3D(-1.664466e-08, 0, -0.38078544, 0, 0.3807854, 0, 0.38078544, 0, -1.664466e-08, 0.07654554, 0.29787827, -0.7929523)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/VendingMachine2" unique_id=512408099]
+transform = Transform3D(1.0000001, 0, -3.5527137e-15, 0, 1.0000001, 0, 3.5527137e-15, 0, 1.0000001, 3.045529, 5.7918324, 1.9336534)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/VendingMachine2/StaticBody3D" unique_id=1513889273]
+transform = Transform3D(1.0000017, 0, -1.0658141e-14, 0, 1.0000051, 0, 1.0658141e-14, 0, 1.0000017, 0, 0, 0)
+shape = SubResource("BoxShape3D_c632w")
+
+[node name="Camera3D" type="Camera3D" parent="Node3D" unique_id=380178893]
+transform = Transform3D(1, 0, 0, 0, 0.9887929, 0.14929375, 0, -0.14929375, 0.9887929, 0, 4.236251, 8.492001)
+
+[node name="Slots" type="Node" parent="Node3D" unique_id=795288884]
+
+[node name="VendingSlot" parent="Node3D/Slots" unique_id=627040347 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 4.2212214, -0.7983846)
+
+[node name="VendingSlot2" parent="Node3D/Slots" unique_id=659426831 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 4.2212214, -0.7983846)
+
+[node name="VendingSlot3" parent="Node3D/Slots" unique_id=1726189302 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 4.2212214, -0.7983846)
+
+[node name="VendingSlot4" parent="Node3D/Slots" unique_id=1632526625 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 4.2212214, -0.7983846)
+
+[node name="VendingSlot5" parent="Node3D/Slots" unique_id=668273776 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 4.2212214, -0.7983846)
+
+[node name="VendingSlot6" parent="Node3D/Slots" unique_id=1633110837 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 3.5416408, -0.7983846)
+
+[node name="VendingSlot7" parent="Node3D/Slots" unique_id=1233078143 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 3.5416408, -0.7983846)
+
+[node name="VendingSlot8" parent="Node3D/Slots" unique_id=626887217 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 3.5416408, -0.7983846)
+
+[node name="VendingSlot9" parent="Node3D/Slots" unique_id=1671176591 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 3.5416408, -0.7983846)
+
+[node name="VendingSlot10" parent="Node3D/Slots" unique_id=271778442 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 3.5416408, -0.7983846)
+
+[node name="VendingSlot11" parent="Node3D/Slots" unique_id=512380240 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 2.8857193, -0.7983846)
+
+[node name="VendingSlot12" parent="Node3D/Slots" unique_id=1357195411 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 2.8857193, -0.7983846)
+
+[node name="VendingSlot13" parent="Node3D/Slots" unique_id=264370924 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 2.8857193, -0.7983846)
+
+[node name="VendingSlot14" parent="Node3D/Slots" unique_id=1057353483 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 2.8857193, -0.7983846)
+
+[node name="VendingSlot15" parent="Node3D/Slots" unique_id=2064968987 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 2.8857193, -0.7983846)
+
+[node name="VendingSlot16" parent="Node3D/Slots" unique_id=116257450 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 2.1964126, -0.7983846)
+
+[node name="VendingSlot17" parent="Node3D/Slots" unique_id=378967878 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 2.1964126, -0.7983846)
+
+[node name="VendingSlot18" parent="Node3D/Slots" unique_id=174791017 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 2.1964126, -0.7983846)
+
+[node name="VendingSlot19" parent="Node3D/Slots" unique_id=1729391302 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 2.1964126, -0.7983846)
+
+[node name="VendingSlot20" parent="Node3D/Slots" unique_id=287194221 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 2.1964126, -0.7983846)
+
+[node name="VendingSlot21" parent="Node3D/Slots" unique_id=225415568 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -1.1267655, 1.3726526, -0.7983846)
+
+[node name="VendingSlot22" parent="Node3D/Slots" unique_id=1000900590 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.68451315, 1.3726526, -0.7983846)
+
+[node name="VendingSlot23" parent="Node3D/Slots" unique_id=1369037827 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, -0.24864766, 1.3726526, -0.7983846)
+
+[node name="VendingSlot24" parent="Node3D/Slots" unique_id=1343670131 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.1948041, 1.3726526, -0.7983846)
+
+[node name="VendingSlot25" parent="Node3D/Slots" unique_id=1352978973 instance=ExtResource("5_i3sa8")]
+transform = Transform3D(-5.769903e-09, 0, -0.132, 0, 0.132, 0, 0.132, 0, -5.769903e-09, 0.6241108, 1.3726526, -0.7983846)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Node3D" unique_id=216690815]
+transform = Transform3D(1, 0, 0, 0, 0.47419578, 0.88041943, 0, -0.88041943, 0.47419578, 0, 5.909502, 1.3358495)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D" unique_id=1357598455]
+transform = Transform3D(1, 0, 0, 0, 0.47419578, 0.88041943, 0, -0.88041943, 0.47419578, 0, 5.909502, 1.3358495)
+
+[node name="Label3D" type="Label3D" parent="Node3D" unique_id=1182060779]
+transform = Transform3D(0.4025541, 0, 0, 0, 0.4025541, 0, 0, 0, 0.4025541, 1.2835504, 3.8230338, 0.065494)
+font_size = 115
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node3D" unique_id=1073407645]
+visible = false
+
+[node name="Label" type="Label" parent="Node3D/CanvasLayer" unique_id=1011538927]
+offset_left = 1022.0
+offset_top = 4.0
+offset_right = 1069.0
+offset_bottom = 27.0
+text = "Coins:"
+
+[node name="CoinCount" type="Label" parent="Node3D/CanvasLayer" unique_id=877891739]
+offset_left = 1072.0
+offset_top = 4.0
+offset_right = 1119.0
+offset_bottom = 27.0
+text = "10"
+
+[node name="Label3" type="Label" parent="Node3D/CanvasLayer" unique_id=288711157]
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 58.0
+offset_bottom = 31.0
+text = "SCORE:"
+
+[node name="ScoreCount" type="Label" parent="Node3D/CanvasLayer" unique_id=826899172]
+offset_left = 68.0
+offset_top = 8.0
+offset_right = 115.0
+offset_bottom = 31.0
+text = "0"
+
+[node name="Label2" type="Label" parent="Node3D/CanvasLayer" unique_id=1208535823]
+offset_left = 547.0
+offset_top = 5.0
+offset_right = 594.0
+offset_bottom = 28.0
+text = "Time Remaining"
+
+[node name="TimeCount" type="Label" parent="Node3D/CanvasLayer" unique_id=1372577163]
+offset_left = 589.0
+offset_top = 21.0
+offset_right = 636.0
+offset_bottom = 44.0
+text = "999"
+
+[node name="Request" type="Label" parent="Node3D/CanvasLayer" unique_id=1266580784]
+offset_left = 18.0
+offset_top = 584.0
+offset_right = 292.0
+offset_bottom = 607.0
+theme_override_font_sizes/font_size = 33
+text = "I Want A BLANK monster right now!"
+
+[node name="Stuck" type="Label" parent="Node3D/CanvasLayer" unique_id=888573827]
+visible = false
+offset_left = 817.0
+offset_top = 228.0
+offset_right = 1146.0
+offset_bottom = 323.0
+theme_override_font_sizes/font_size = 33
+text = "CAN IS STUCK
+SHAKE WITH A and D"
+horizontal_alignment = 1
+
+[node name="Area3D" type="Area3D" parent="Node3D" unique_id=1671512567]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Area3D" unique_id=2128310772]
+shape = SubResource("BoxShape3D_85jv8")
+
+[node name="Scene" type="Node3D" parent="Node3D" unique_id=687551881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9088163)
+
+[node name="Chair" parent="Node3D/Scene" unique_id=1432283421 instance=ExtResource("6_7ive4")]
+transform = Transform3D(0.16029617, 0, 0.1649398, 0, 0.23, 0, -0.1649398, 0, 0.16029617, -3.0697978, 0.12049507, 1.7670012)
+
+[node name="Chair2" parent="Node3D/Scene" unique_id=1810437412 instance=ExtResource("6_7ive4")]
+transform = Transform3D(0.11362408, 0, -0.19997393, 0, 0.23, 0, 0.19997393, 0, 0.11362408, 3.3553092, 0.12049507, 1.1798389)
+
+[node name="Floor" parent="Node3D/Scene" unique_id=596602733 instance=ExtResource("7_kr8ks")]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, -2.186808, 0, 2.9521751)
+
+[node name="Floor2" parent="Node3D/Scene" unique_id=703752757 instance=ExtResource("7_kr8ks")]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, 3.3455372, 0, 2.9521751)
+
+[node name="Floor3" parent="Node3D/Scene" unique_id=1174653995 instance=ExtResource("7_kr8ks")]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, -2.186808, 0, 8.485297)
+
+[node name="Floor4" parent="Node3D/Scene" unique_id=1376201117 instance=ExtResource("7_kr8ks")]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, 3.3455372, 0, 8.485297)
+
+[node name="Light" parent="Node3D/Scene" unique_id=110028739 instance=ExtResource("8_pmwbl")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, 0, 6.9739723, 3.4816728)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Node3D/Scene/Light" unique_id=442600321]
+transform = Transform3D(4.347826, 0, 0, 0, -1.9004955e-07, -4.347826, 0, 4.347826, -1.9004955e-07, 0, 2.1583772, -0.36129478)
+light_color = Color(1, 1, 0.49803922, 1)
+light_energy = 4.348
+shadow_enabled = true
+shadow_normal_bias = 10.0
+spot_range = 9.541472
+spot_angle = 81.56249
+
+[node name="Light2" parent="Node3D/Scene" unique_id=1274315825 instance=ExtResource("8_pmwbl")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, 0, 6.973972, 9.833372)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Node3D/Scene/Light2" unique_id=1100425272]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.497858, 6.547346e-08)
+light_color = Color(1, 1, 0.49803922, 1)
+light_energy = 11.078
+shadow_enabled = true
+spot_range = 9.541472
+spot_angle = 81.56249
+
+[node name="MonsterCan" parent="Node3D/Scene" unique_id=576905911 instance=ExtResource("9_2n7fw")]
+transform = Transform3D(0.1319456, 0, -0.18838885, 0, 0.23, 0, 0.18838885, 0, 0.1319456, -2.8494976, 1.595132, 1.9097881)
+
+[node name="Roof" parent="Node3D/Scene" unique_id=1193343007 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, -2.3723953, 7.0183873, 2.4091191)
+
+[node name="Roof2" parent="Node3D/Scene" unique_id=635128009 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, 3.1429117, 7.0183873, 2.4091191)
+
+[node name="Roof3" parent="Node3D/Scene" unique_id=657303771 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, -2.3723953, 7.018387, 7.901335)
+
+[node name="Roof4" parent="Node3D/Scene" unique_id=1665880829 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, 3.1429117, 7.018387, 7.901335)
+
+[node name="Roof5" parent="Node3D/Scene" unique_id=312357600 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, -2.3723953, 7.0183864, 13.421335)
+
+[node name="Roof6" parent="Node3D/Scene" unique_id=595357763 instance=ExtResource("10_es5ds")]
+transform = Transform3D(0.23, 0, 0, 0, -0.23, 2.0107239e-08, 0, -2.0107239e-08, -0.23, 3.1429117, 7.0183864, 13.421335)
+
+[node name="Wall" parent="Node3D/Scene" unique_id=1215036140 instance=ExtResource("11_45r57")]
+transform = Transform3D(0.23, 0, 0, 0, 0.23, 0, 0, 0, 0.23, 0, 0, 0)
+
+[node name="Wall2" parent="Node3D/Scene" unique_id=358368291 instance=ExtResource("11_45r57")]
+transform = Transform3D(-1.0053619e-08, 0, 0.23, 0, 0.23, 0, -0.23, 0, -1.0053619e-08, -4.887716, 0, 4.842721)
+
+[node name="Wall3" parent="Node3D/Scene" unique_id=220550131 instance=ExtResource("11_45r57")]
+transform = Transform3D(-1.0053619e-08, 0, 0.23, 0, 0.23, 0, -0.23, 0, -1.0053619e-08, -4.8877153, 0, 14.889585)
+
+[node name="Wall4" parent="Node3D/Scene" unique_id=1624755599 instance=ExtResource("11_45r57")]
+transform = Transform3D(3.016086e-08, 0, -0.23, 0, 0.23, 0, 0.23, 0, 3.016086e-08, 4.70344, 0, 4.8427205)
+
+[node name="Wall5" parent="Node3D/Scene" unique_id=510743226 instance=ExtResource("11_45r57")]
+transform = Transform3D(3.016086e-08, 0, -0.23, 0, 0.23, 0, 0.23, 0, 3.016086e-08, 4.7034407, 0, 14.889585)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Scene" unique_id=440240664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28193814, 3.0342808, 0.9432757)
+light_energy = 16.0
+omni_range = 2.2200103
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=392654371]
+environment = SubResource("Environment_33qfa")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1798636043]
+stream = ExtResource("12_qg82j")
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

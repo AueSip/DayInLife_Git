@@ -1,0 +1,8 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://rd8xu4s7qqfw"]
+
+[ext_resource type="Texture2D" uid="uid://dcjno202l6ddp" path="res://Textures/MonsterCan_DefaultMaterial_BaseColor.png" id="1_esc4b"]
+[ext_resource type="Texture2D" uid="uid://cbwnuffmpb5sm" path="res://Textures/MonsterCan_DefaultMaterial_Normal.png" id="2_obyum"]
+
+[resource]
+albedo_texture = ExtResource("1_esc4b")
+normal_texture = ExtResource("2_obyum")

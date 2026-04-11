@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b0gtiyyx4oe3n"]
+
+[ext_resource type="PackedScene" uid="uid://4edwlawu7hx0" path="res://Scenes/Pieces/PhysicalButton.tscn" id="1_vmvxe"]
+
+[node name="GridOfButtons" type="Node3D" unique_id=1057915687]
+
+[node name="Button" parent="." unique_id=548213929 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0622191, 2.3077455, 0)
+buttonVal = "1"
+
+[node name="Button2" parent="." unique_id=674754140 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3077455, 0)
+buttonVal = "2"
+
+[node name="Button3" parent="." unique_id=936382583 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0470612, 2.3077455, 0)
+buttonVal = "3"
+
+[node name="Button4" parent="." unique_id=1691243426 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0622191, 1.2026441, 0)
+buttonVal = "4"
+
+[node name="Button5" parent="." unique_id=1295563122 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2026441, 0)
+buttonVal = "5"
+
+[node name="Button6" parent="." unique_id=1405653011 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0470612, 1.2026441, 0)
+buttonVal = "6"
+
+[node name="Button7" parent="." unique_id=1542100860 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0622191, 0.15502787, 0)
+buttonVal = "7"
+
+[node name="Button8" parent="." unique_id=220967756 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15502787, 0)
+buttonVal = "8"
+
+[node name="Button9" parent="." unique_id=268779433 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0470612, 0.15502787, 0)
+buttonVal = "9"
+
+[node name="Button10" parent="." unique_id=39735553 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0622191, -0.920691, 0)
+buttonVal = "DEL"
+
+[node name="Button11" parent="." unique_id=1742423460 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.920691, 0)
+buttonVal = "0"
+
+[node name="Button12" parent="." unique_id=628149394 groups=["InputButtonGroup"] instance=ExtResource("1_vmvxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0470612, -0.920691, 0)
+buttonVal = "ACC"

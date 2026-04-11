@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://ckpdky05vxv66"]
+
+[ext_resource type="Texture2D" uid="uid://uchsx7158fkq" path="res://Textures/Light/Light_Light_BaseColor.png" id="1_b773s"]
+[ext_resource type="Texture2D" uid="uid://iwpp6wpm18kn" path="res://Textures/Light/Light_Light_Emissive.png" id="2_dmjm8"]
+[ext_resource type="Texture2D" uid="uid://crqvxtweblq6x" path="res://Textures/Light/Light_Light_Normal.png" id="3_cxbv5"]
+[ext_resource type="Texture2D" uid="uid://cj7rdx3oakrfh" path="res://Textures/Light/Light_Light_OcclusionRoughnessMetallic.png" id="4_kkubk"]
+
+[resource]
+depth_draw_mode = 1
+albedo_texture = ExtResource("1_b773s")
+orm_texture = ExtResource("4_kkubk")
+emission_enabled = true
+emission_texture = ExtResource("2_dmjm8")
+normal_enabled = true
+normal_texture = ExtResource("3_cxbv5")

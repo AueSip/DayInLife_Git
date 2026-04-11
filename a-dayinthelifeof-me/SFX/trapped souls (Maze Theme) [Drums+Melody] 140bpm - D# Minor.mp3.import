@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://n2tubtre1isj"
+path="res://.godot/imported/trapped souls (Maze Theme) [Drums+Melody] 140bpm - D# Minor.mp3-650ef2d2b0b23a2eed507d2d11fc5e6e.mp3str"
+
+[deps]
+
+source_file="res://SFX/trapped souls (Maze Theme) [Drums+Melody] 140bpm - D# Minor.mp3"
+dest_files=["res://.godot/imported/trapped souls (Maze Theme) [Drums+Melody] 140bpm - D# Minor.mp3-650ef2d2b0b23a2eed507d2d11fc5e6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

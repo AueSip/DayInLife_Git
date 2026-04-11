@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c18edpcn5sl1d"]
+
+[ext_resource type="Texture2D" uid="uid://bt587p4cv616q" path="res://Textures/BKG.jpg" id="1_e87j7"]
+[ext_resource type="Script" uid="uid://bki0hidejh538" path="res://Scenes/WallScript.gd" id="2_50euq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7gr2"]
+size = Vector2(106, 247)
+
+[node name="Wall" type="Sprite2D" unique_id=2002575983 groups=["DeathWall"]]
+texture = ExtResource("1_e87j7")
+region_enabled = true
+region_rect = Rect2(218.09003, 39.18, 118.16989, 260.215)
+
+[node name="DeathArea" type="Area2D" parent="." unique_id=863161145 groups=["DeathWall"]]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea" unique_id=794592336]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_b7gr2")
+disabled = true
+script = ExtResource("2_50euq")
+
+[connection signal="visibility_changed" from="." to="DeathArea/CollisionShape2D" method="_on_visibility_changed"]

@@ -1,0 +1,12 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://5sks1ufoqkhy"]
+
+[ext_resource type="Texture2D" uid="uid://ixutw251a1sn" path="res://Textures/Floor/Floor_DefaultMaterial_BaseColor.png" id="1_ac553"]
+[ext_resource type="Texture2D" uid="uid://e14cj026bln1" path="res://Textures/Floor/Floor_DefaultMaterial_Normal.png" id="2_my8iy"]
+[ext_resource type="Texture2D" uid="uid://b4dg6ngidj5io" path="res://Textures/Floor/Floor_DefaultMaterial_OcclusionRoughnessMetallic.png" id="3_lgoth"]
+
+[resource]
+albedo_texture = ExtResource("1_ac553")
+orm_texture = ExtResource("3_lgoth")
+normal_enabled = true
+normal_scale = 7.22
+normal_texture = ExtResource("2_my8iy")

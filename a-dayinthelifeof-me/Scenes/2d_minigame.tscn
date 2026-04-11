@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://h0oa6dvmejlj"]
+
+[ext_resource type="Script" uid="uid://cqeqk8lpy81qn" path="res://Scenes/2d_minigame.gd" id="1_e17qs"]
+[ext_resource type="PackedScene" uid="uid://cj31nq1rqxdb7" path="res://Scenes/coin.tscn" id="1_wqr7w"]
+[ext_resource type="Texture2D" uid="uid://ioyfnpcgpkoc" path="res://Textures/glitch-screen-16-15188388.jpg" id="2_srxuv"]
+[ext_resource type="PackedScene" uid="uid://c18edpcn5sl1d" path="res://Scenes/2Dwall.tscn" id="3_srxuv"]
+[ext_resource type="PackedScene" uid="uid://dbeo2ce1ovt45" path="res://Scenes/Exit.tscn" id="4_yn7wc"]
+
+[node name="2DMinigame" type="Node2D" unique_id=1135126518 node_paths=PackedStringArray("minigameList")]
+script = ExtResource("1_e17qs")
+minigameList = [NodePath("MinigameVersion1"), NodePath("MinigameVersion2")]
+
+[node name="GlitchScreen1615188388" type="Sprite2D" parent="." unique_id=273458897]
+position = Vector2(568, 333)
+scale = Vector2(0.64258707, 0.64258707)
+texture = ExtResource("2_srxuv")
+
+[node name="MinigameVersion1" type="Node2D" parent="." unique_id=666911709]
+visible = false
+position = Vector2(146, 447)
+
+[node name="Wall" parent="MinigameVersion1" unique_id=2002575983 instance=ExtResource("3_srxuv")]
+position = Vector2(-199, 67)
+
+[node name="Wall2" parent="MinigameVersion1" unique_id=694664673 instance=ExtResource("3_srxuv")]
+position = Vector2(-202, -447)
+
+[node name="Wall23" parent="MinigameVersion1" unique_id=351360142 instance=ExtResource("3_srxuv")]
+position = Vector2(1070, -535)
+
+[node name="Wall3" parent="MinigameVersion1" unique_id=1557162532 instance=ExtResource("3_srxuv")]
+position = Vector2(-199, -189)
+
+[node name="Wall4" parent="MinigameVersion1" unique_id=2107635081 instance=ExtResource("3_srxuv")]
+position = Vector2(1038, -87)
+
+[node name="Wall21" parent="MinigameVersion1" unique_id=458672530 instance=ExtResource("3_srxuv")]
+position = Vector2(870, -23)
+
+[node name="Wall5" parent="MinigameVersion1" unique_id=740869009 instance=ExtResource("3_srxuv")]
+position = Vector2(-130, 249)
+rotation = 1.5707964
+
+[node name="Wall6" parent="MinigameVersion1" unique_id=38836049 instance=ExtResource("3_srxuv")]
+position = Vector2(382, 249)
+rotation = 1.5707964
+
+[node name="Wall17" parent="MinigameVersion1" unique_id=1023177227 instance=ExtResource("3_srxuv")]
+position = Vector2(638, 249)
+rotation = 1.5707964
+
+[node name="Wall18" parent="MinigameVersion1" unique_id=1483699674 instance=ExtResource("3_srxuv")]
+position = Vector2(894, 249)
+rotation = 1.5707964
+
+[node name="Wall19" parent="MinigameVersion1" unique_id=1199028668 instance=ExtResource("3_srxuv")]
+position = Vector2(1150, 249)
+rotation = 1.5707964
+
+[node name="Wall20" parent="MinigameVersion1" unique_id=869152283 instance=ExtResource("3_srxuv")]
+position = Vector2(1038, 65)
+
+[node name="Wall7" parent="MinigameVersion1" unique_id=455716499 instance=ExtResource("3_srxuv")]
+position = Vector2(126, 249)
+rotation = 1.5707964
+
+[node name="Wall8" parent="MinigameVersion1" unique_id=1242068867 instance=ExtResource("3_srxuv")]
+position = Vector2(118, -159)
+rotation = 1.5707964
+
+[node name="Wall12" parent="MinigameVersion1" unique_id=1566744 instance=ExtResource("3_srxuv")]
+position = Vector2(118, -463)
+rotation = 1.5707964
+
+[node name="Wall13" parent="MinigameVersion1" unique_id=1226643880 instance=ExtResource("3_srxuv")]
+position = Vector2(374, -463)
+rotation = 1.5707964
+
+[node name="Wall14" parent="MinigameVersion1" unique_id=1304222476 instance=ExtResource("3_srxuv")]
+position = Vector2(630, -463)
+rotation = 1.5707964
+
+[node name="Wall15" parent="MinigameVersion1" unique_id=1971844894 instance=ExtResource("3_srxuv")]
+position = Vector2(886, -463)
+rotation = 1.5707964
+
+[node name="Wall9" parent="MinigameVersion1" unique_id=535163733 instance=ExtResource("3_srxuv")]
+position = Vector2(286, -47)
+rotation = 1.5707964
+
+[node name="Wall22" parent="MinigameVersion1" unique_id=175679965 instance=ExtResource("3_srxuv")]
+position = Vector2(374, 65)
+rotation = 3.1415927
+
+[node name="Wall10" parent="MinigameVersion1" unique_id=1829073490 instance=ExtResource("3_srxuv")]
+position = Vector2(502, -351)
+rotation = 1.5707964
+
+[node name="Wall16" parent="MinigameVersion1" unique_id=633364375 instance=ExtResource("3_srxuv")]
+position = Vector2(638, -47)
+rotation = 3.1415927
+
+[node name="Wall11" parent="MinigameVersion1" unique_id=205044355 instance=ExtResource("3_srxuv")]
+position = Vector2(-138, -463)
+rotation = 1.5707964
+
+[node name="Exit" parent="MinigameVersion1" unique_id=1307443238 instance=ExtResource("4_yn7wc")]
+position = Vector2(958, -311.00003)
+rotation = 1.5707964
+
+[node name="MinigameVersion2" type="Node2D" parent="." unique_id=208668]
+visible = false
+position = Vector2(146, 447)
+
+[node name="Wall" parent="MinigameVersion2" unique_id=751437619 instance=ExtResource("3_srxuv")]
+position = Vector2(-202, 113)
+
+[node name="Wall2" parent="MinigameVersion2" unique_id=1776794568 instance=ExtResource("3_srxuv")]
+position = Vector2(-202, -143)
+
+[node name="Wall3" parent="MinigameVersion2" unique_id=847817621 instance=ExtResource("3_srxuv")]
+position = Vector2(-202, -399)
+
+[node name="Wall4" parent="MinigameVersion2" unique_id=365640285 instance=ExtResource("3_srxuv")]
+position = Vector2(38, -183)
+
+[node name="Wall5" parent="MinigameVersion2" unique_id=1894526560 instance=ExtResource("3_srxuv")]
+position = Vector2(294, -351)
+
+[node name="Wall6" parent="MinigameVersion2" unique_id=721759444 instance=ExtResource("3_srxuv")]
+position = Vector2(294, -95)
+
+[node name="Wall7" parent="MinigameVersion2" unique_id=958568534 instance=ExtResource("3_srxuv")]
+position = Vector2(478, -231)
+rotation = -1.5707964
+
+[node name="Wall8" parent="MinigameVersion2" unique_id=142430119 instance=ExtResource("3_srxuv")]
+position = Vector2(734, -231)
+rotation = -1.5707964
+
+[node name="Wall9" parent="MinigameVersion2" unique_id=1059665123 instance=ExtResource("3_srxuv")]
+position = Vector2(910, -7)
+rotation = -1.5707964
+
+[node name="Wall10" parent="MinigameVersion2" unique_id=2022308448 instance=ExtResource("3_srxuv")]
+position = Vector2(654, -7)
+rotation = -1.5707964
+
+[node name="Wall11" parent="MinigameVersion2" unique_id=441084986 instance=ExtResource("3_srxuv")]
+position = Vector2(582, 177)
+
+[node name="Wall12" parent="MinigameVersion2" unique_id=186929944 instance=ExtResource("3_srxuv")]
+position = Vector2(1022, -383)
+
+[node name="Wall13" parent="MinigameVersion2" unique_id=1484019576 instance=ExtResource("3_srxuv")]
+position = Vector2(1022, -127)
+
+[node name="Wall14" parent="MinigameVersion2" unique_id=799178345 instance=ExtResource("3_srxuv")]
+position = Vector2(1022, 129)
+
+[node name="Wall15" parent="MinigameVersion2" unique_id=195125324 instance=ExtResource("3_srxuv")]
+position = Vector2(950, 257)
+rotation = 1.5707964
+
+[node name="Wall16" parent="MinigameVersion2" unique_id=30211849 instance=ExtResource("3_srxuv")]
+position = Vector2(694, 257)
+rotation = 1.5707964
+
+[node name="Wall17" parent="MinigameVersion2" unique_id=1287951870 instance=ExtResource("3_srxuv")]
+position = Vector2(438, 257)
+rotation = 1.5707964
+
+[node name="Wall18" parent="MinigameVersion2" unique_id=1086554683 instance=ExtResource("3_srxuv")]
+position = Vector2(182, 257)
+rotation = 1.5707964
+
+[node name="Wall19" parent="MinigameVersion2" unique_id=515002191 instance=ExtResource("3_srxuv")]
+position = Vector2(-74, 257)
+rotation = 1.5707964
+
+[node name="Wall20" parent="MinigameVersion2" unique_id=1634525682 instance=ExtResource("3_srxuv")]
+position = Vector2(-18, -471)
+rotation = 1.5707964
+
+[node name="Wall21" parent="MinigameVersion2" unique_id=1234173213 instance=ExtResource("3_srxuv")]
+position = Vector2(230, -471)
+rotation = 1.5707964
+
+[node name="Wall22" parent="MinigameVersion2" unique_id=1857306098 instance=ExtResource("3_srxuv")]
+position = Vector2(670, -471)
+rotation = 1.5707964
+
+[node name="Wall23" parent="MinigameVersion2" unique_id=877957584 instance=ExtResource("3_srxuv")]
+position = Vector2(926, -471)
+rotation = 1.5707964
+
+[node name="Wall24" parent="MinigameVersion2" unique_id=2078030039 instance=ExtResource("3_srxuv")]
+position = Vector2(1182, -471)
+rotation = 1.5707964
+
+[node name="Exit2" parent="MinigameVersion2" unique_id=875499754 instance=ExtResource("4_yn7wc")]
+position = Vector2(454, -415.00003)
+
+[node name="Coin" parent="." unique_id=286064097 node_paths=PackedStringArray("MainMinigameManager") instance=ExtResource("1_wqr7w")]
+position = Vector2(180.99997, 551.00006)
+scale = Vector2(0.105, 0.105)
+MainMinigameManager = NodePath("..")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="Death" from="Coin" to="." method="_on_coin_death"]
+[connection signal="Won" from="Coin" to="." method="_on_coin_won"]

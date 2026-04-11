@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://chvuwcij68jxu"]
+
+[ext_resource type="PackedScene" uid="uid://bndqrmrrqxswr" path="res://Models/Light.fbx" id="1_r8qkt"]
+[ext_resource type="Material" uid="uid://ckpdky05vxv66" path="res://Materials/Light.tres" id="2_nmsbo"]
+
+[node name="Light" unique_id=110028739 instance=ExtResource("1_r8qkt")]
+
+[node name="Cylinder" parent="." index="1" unique_id=463800530]
+surface_material_override/0 = ExtResource("2_nmsbo")
+surface_material_override/1 = ExtResource("2_nmsbo")
+
+[node name="Light" parent="." index="2" unique_id=1913830725]
+light_energy = 0.0
+shadow_enabled = false

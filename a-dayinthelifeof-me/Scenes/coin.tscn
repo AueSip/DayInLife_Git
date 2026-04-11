@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cj31nq1rqxdb7"]
+
+[ext_resource type="Texture2D" uid="uid://c7tux54rs4lr0" path="res://Textures/image1.png" id="1_jgi06"]
+[ext_resource type="Script" uid="uid://8knb3khdvfwp" path="res://Scenes/Pieces/Minigame_Coin.gd" id="2_jgi06"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2qo34"]
+radius = 373.62802
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jgi06"]
+size = Vector2(924.5112, 1015.9464)
+
+[node name="Coin" type="Sprite2D" unique_id=286064097]
+scale = Vector2(0.19686079, 0.19686079)
+texture = ExtResource("1_jgi06")
+script = ExtResource("2_jgi06")
+
+[node name="DeathyArea" type="Area2D" parent="." unique_id=865077730 groups=["WinZone"]]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathyArea" unique_id=1065543597]
+position = Vector2(0, -76.19598)
+shape = SubResource("CircleShape2D_2qo34")
+
+[node name="CollisionBox" type="Area2D" parent="." unique_id=17921271]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBox" unique_id=352003169]
+position = Vector2(-10.159464, -71.11625)
+shape = SubResource("RectangleShape2D_jgi06")
+
+[connection signal="area_entered" from="DeathyArea" to="." method="_on_deathy_area_area_entered"]
+[connection signal="input_event" from="CollisionBox" to="." method="_on_collision_box_input_event"]

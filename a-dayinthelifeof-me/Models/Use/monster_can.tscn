@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b3k6mtnpg71al"]
+
+[ext_resource type="PackedScene" uid="uid://bidvengwc3s34" path="res://Models/MonsterCan.fbx" id="1_7m7jv"]
+[ext_resource type="Material" uid="uid://rd8xu4s7qqfw" path="res://Materials/MonsterCanMat.tres" id="2_sscva"]
+
+[node name="MonsterCan" unique_id=576905911 instance=ExtResource("1_7m7jv")]
+
+[node name="Cylinder" parent="." index="0" unique_id=1612830014]
+surface_material_override/0 = ExtResource("2_sscva")

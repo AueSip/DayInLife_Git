@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b22wr27myrdbq"]
+
+[ext_resource type="PackedScene" uid="uid://cayngc2wajxq" path="res://Models/Wall.fbx" id="1_yjgh0"]
+[ext_resource type="Material" uid="uid://8vpq1qb1gqsf" path="res://Materials/Wall.tres" id="2_v1pv7"]
+
+[node name="Wall" unique_id=1215036140 instance=ExtResource("1_yjgh0")]
+
+[node name="Light" parent="." index="1" unique_id=1420352394]
+light_energy = 0.0
+shadow_enabled = false
+
+[node name="Plane" parent="." index="2" unique_id=729441167]
+surface_material_override/0 = ExtResource("2_v1pv7")
+surface_material_override/1 = ExtResource("2_v1pv7")

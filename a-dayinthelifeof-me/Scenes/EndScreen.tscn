@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ov474243jv0d"]
+
+[ext_resource type="Script" uid="uid://b6cljyped1yxl" path="res://Scenes/end_screen.gd" id="1_gcms0"]
+
+[node name="EndScreen" type="Node2D" unique_id=2134376519]
+script = ExtResource("1_gcms0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=454566180]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1185165993]
+offset_left = 490.0
+offset_top = 354.0
+offset_right = 635.0
+offset_bottom = 426.0
+theme_override_font_sizes/font_size = 46
+text = "MENU"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1891022945]
+offset_left = 186.0
+offset_top = 124.0
+offset_right = 319.0
+offset_bottom = 182.0
+theme_override_font_sizes/font_size = 42
+text = "SCORE"
+
+[node name="ScoreCount" type="Label" parent="CanvasLayer" unique_id=1906551448]
+offset_left = 184.0
+offset_top = 175.0
+offset_right = 317.0
+offset_bottom = 233.0
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="MonsterCount" type="Label" parent="CanvasLayer" unique_id=908116403]
+offset_left = 498.0
+offset_top = 175.0
+offset_right = 631.0
+offset_bottom = 233.0
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="CoinCount" type="Label" parent="CanvasLayer" unique_id=1110780795]
+offset_left = 822.0
+offset_top = 171.0
+offset_right = 955.0
+offset_bottom = 229.0
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1273347305]
+offset_left = 450.0
+offset_top = 124.0
+offset_right = 675.0
+offset_bottom = 182.0
+theme_override_font_sizes/font_size = 42
+text = "MONSTERS"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer" unique_id=1695450463]
+offset_left = 820.0
+offset_top = 123.0
+offset_right = 953.0
+offset_bottom = 181.0
+theme_override_font_sizes/font_size = 42
+text = "COINS"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
