@@ -17,8 +17,8 @@ Class Group: TU984
 
 This is an image using a relative URL:
 
-![3D Gameplay Image]('./Screenshot/Screenshot_2026-04-11_234545.png')
-![2D Minigame Image]('./Screenshot/Screenshot_2026-04-11_234537.png')
+![3D Gameplay Image](./Screenshot/InGameGameplay.png)
+![2D Minigame Image](./Screenshot/GameplayMonster2D.png)
 
 
 
