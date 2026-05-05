@@ -11,7 +11,7 @@ Class Group: TU984
 
 # Video
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://youtu.be/k1n3TPAd9bM?si=3BMkchFsWIXRLfMq)
+[![YouTube](./Screenshot/Thumbnail.png)](https://youtu.be/k1n3TPAd9bM?si=3BMkchFsWIXRLfMq)
 
 # Screenshots
 
