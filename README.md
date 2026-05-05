@@ -27,8 +27,7 @@ A Monster themed game where you must fish out as many monsters from a vending ma
 It is a chaotic arcate themed game that simulates a students life choices surrounding their precious Monster Energy!
 
 # Instructions for use
-Run the Game from the web browser on [Itch](https://auesip.itch.io/wheres-my-monster_)
-/n
+Run the Game from the web browser on [Itch](https://auesip.itch.io/wheres-my-monster_).
 Collect As Many Monsters As You Can!
 Left Click to Interact
 Left Click To Move the coin!
@@ -42,7 +41,7 @@ Core Loop
 - Activate 2D Minigame
 - Monster falls
 - Collect Score + Monster
-- 
+
 External Feedback Loops 1
 - Monster Gets stuck
 - Player must shake A and D Keys to unstuck it
@@ -80,9 +79,7 @@ The visual effects and sound design using custom made sounds lead to a satisfyin
 # What I learned
 Instantiation and Procedural features go hand in hand. With these two tricks utilised I was able to generate random variants of the game on "Start" instead of hard-coding any specific elements.
 
-# Proposal submitted earlier can go here (if there is one):
-
-#Code Examples
+# Code Examples
 
 ##GlobalVars
 ```GDScript
