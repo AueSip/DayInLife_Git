@@ -59,21 +59,21 @@ External Feedback Loops 2
 
 # List of classes/assets in the project
 
-| Class/asset | Source | Use |
+| Class/asset | Source | Use ||
 |-----------|-----------|
-| GlobalVars.gd | Self written |Stores Hi-Score|
-| vending_game_manager.gd | Self written |Communicator For All Scripts |
-| SoundHandler.gd | Self written | Alters Audio Pitch Randomly |
-| 2d_minigame.gd | Self written | Manages 2D Scene |
-| end_screen.gd | Self written | Handles The End Screen UI |
-| front_piece.gd | Self written | Animations For Opening Slots |
-| Minigame_Coin.gd | Self written | Coin Collision Handler |
-| monster_can.gd | Self written | Monster Can Initialisation |
-| physical_button.gd | Self written | Keypad Button Handler |
-| playerScript.gd | Self written | Player Input Handler |
-| start_screen.gd | Self written | Handles The Titlescreen UI |
-| vending_slot.gd | Self written | Holds and Generates Monster Cans |
-| WallScript.gd | Self written | Randomisation Of 2D Scene |
+| GlobalVars.gd | Self written | Stores Hi-Score ||
+| vending_game_manager.gd | Self written | Communicator For All Scripts ||
+| SoundHandler.gd | Self written | Alters Audio Pitch Randomly ||
+| 2d_minigame.gd | Self written | Manages 2D Scene ||
+| end_screen.gd | Self written | Handles The End Screen UI ||
+| front_piece.gd | Self written | Animations For Opening Slots ||
+| Minigame_Coin.gd | Self written | Coin Collision Handler ||
+| monster_can.gd | Self written | Monster Can Initialisation ||
+| physical_button.gd | Self written | Keypad Button Handler ||
+| playerScript.gd | Self written | Player Input Handler ||
+| start_screen.gd | Self written | Handles The Titlescreen UI ||
+| vending_slot.gd | Self written | Holds and Generates Monster Cans ||
+| WallScript.gd | Self written | Randomisation Of 2D Scene ||
 
 # References
 * Item 1
