@@ -81,7 +81,7 @@ Instantiation and Procedural features go hand in hand. With these two tricks uti
 
 # Code Examples
 
-##GlobalVars
+## GlobalVars
 ```GDScript
 extends Node
 
@@ -95,7 +95,7 @@ func SetCoins(coin:int):
 	coins = coin
 ```
 
-##vending_game_manager
+## vending_game_manager
 ```GDScript
 func _process(delta: float) -> void:
 	if (titleScreen):
@@ -132,7 +132,7 @@ func ButtonPressed(buttonVal:String):
 			UpdateLabelValue(buttonVal)
 ```
 
-##SoundHandler
+## SoundHandler
 ```GDScript
 extends AudioStreamPlayer3D
 
@@ -140,7 +140,7 @@ func _on_finished() -> void:
 	pitch_scale = randf_range(0.9,1.1)
 ```
 
-##2d_minigame
+## 2d_minigame
 ```GDScript
 func init(sceneScript:Node3D):
 #reference to vending_game_manager
@@ -163,7 +163,7 @@ func _on_tree_entered() -> void:
 	minigameList.pick_random().visible = true
 ```
 
-##end_screen
+## end_screen
 ```GDScript
 extends Node2D
 
@@ -176,7 +176,7 @@ func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/StartScreen.tscn")
 ```
 
-##front_piece
+## front_piece
 ```GDScript
 #Animated Piece
 func InitiateGoDown():
@@ -208,7 +208,7 @@ func InitiateGoUp():
 	tween.tween_property(self, "position",UpDown[0].position , 1)
 ```
 
-##Minigame_Coin
+## Minigame_Coin
 ```GDScript
 func _on_collision_box_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if Input.is_action_pressed("leftClick"):
@@ -221,7 +221,7 @@ func _on_deathy_area_area_entered(area: Area2D) -> void:
 		emit_signal("Won")
 ```
 
-##monster_can
+## monster_can
 ```GDScript
 #abstract editable monster can
 extends Node3D
@@ -244,7 +244,7 @@ func ReturnMonsterColourName() -> String:
 	return MonsterColourName
 ```
 
-##physical_button
+## physical_button
 ```GDScript
 func _ready() -> void:
 	$Label3D.text = buttonVal
@@ -260,7 +260,7 @@ func _on_area_3d_area_entered(area: Area3D) -> void:
 	print(returnButtonValue())
 ```
 
-##playerScript
+## playerScript
 ```GDScript
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("leftClick"):
@@ -281,7 +281,7 @@ func _input(event: InputEvent) -> void:
 			mainScript.ButtonPressed(final.returnButtonValue())
 ```
 
-##start_screen
+## start_screen
 ```GDScript
 func _ready() -> void:
 	pass # Replace with function body.
@@ -293,7 +293,7 @@ func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/vending_scene.tscn")
 ```
 
-##vending_slot
+## vending_slot
 ```GDScript
 var monsterColour:Color
 var monsterColourName:String
@@ -329,7 +329,7 @@ func ReturnIsStuck() -> bool:
 	return out
 ```
 
-##WallScript
+## WallScript
 ```GDScript
 func _on_visibility_changed() -> void:
 	disabled = !visible
