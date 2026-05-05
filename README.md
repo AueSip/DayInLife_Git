@@ -27,7 +27,8 @@ A Monster themed game where you must fish out as many monsters from a vending ma
 It is a chaotic arcate themed game that simulates a students life choices surrounding their precious Monster Energy!
 
 # Instructions for use
-Run the Game from the web browser at [Itch](https://auesip.itch.io/wheres-my-monster_)
+Run the Game from the web browser on [Itch](https://auesip.itch.io/wheres-my-monster_)
+/n
 Collect As Many Monsters As You Can!
 Left Click to Interact
 Left Click To Move the coin!
@@ -46,7 +47,7 @@ External Feedback Loops 1
 - Monster Gets stuck
 - Player must shake A and D Keys to unstuck it
 - Monster Falls
-- 
+  
 External Feedback Loops 2
 - Player Requests Specific Monster
 - Player Collects Requested Monster
