@@ -26,11 +26,11 @@ Titlescreen Image
 # Description of the project
 
 A Game for the Creative Coding 2026 Day In A College Students Life Assignment.
-A Monster themed game where you must fish out as many monsters from a vending machine in a set amount of time. It is 
+A Monster themed game where you must fish out as many monsters from a vending machine in a set amount of time. 
+It is a chaotic arcate themed game that simulates a students life choices surrounding their precious Monster Energy!
 
 
 # Instructions for use
-
 Run the Game from the web browser at [Itch](https://auesip.itch.io/wheres-my-monster_)
 Collect As Many Monsters As You Can!
 Left Click to Interact
@@ -38,17 +38,19 @@ Left Click To Move the coin!
 A and D to SHAKE THE MACHINE
 
 # How it works:
-Where's My Monster utilises Instantiation, Abstraction and Parameter Based Procedurally Generation for its gameplay loops to function.
+Where's My Monster utilises Instantiation, Abstraction and Parameter Based Procedural Generation for its gameplay loops to function.
 
 Core Loop
 - Interact with keypad
 - Activate 2D Minigame
 - Monster falls
 - Collect Score + Monster
+- 
 External Feedback Loops 1
 - Monster Gets stuck
 - Player must shake A and D Keys to unstuck it
 - Monster Falls
+- 
 External Feedback Loops 2
 - Player Requests Specific Monster
 - Player Collects Requested Monster
@@ -57,11 +59,21 @@ External Feedback Loops 2
 
 # List of classes/assets in the project
 
-| Class/asset | Source |
+| Class/asset | Source | Use |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| GlobalVars.gd | Self written |Stores Hi-Score|
+| vending_game_manager.gd | Self written |Communicator For All Scripts |
+| SoundHandler.gd | Self written | Alters Audio Pitch Randomly |
+| 2d_minigame.gd | Self written | Manages 2D Scene |
+| end_screen.gd | Self written | Handles The End Screen UI |
+| front_piece.gd | Self written | Animations For Opening Slots |
+| Minigame_Coin.gd | Self written | Coin Collision Handler |
+| monster_can.gd | Self written | Monster Can Initialisation |
+| physical_button.gd | Self written | Keypad Button Handler |
+| playerScript.gd | Self written | Player Input Handler |
+| start_screen.gd | Self written | Handles The Titlescreen UI |
+| vending_slot.gd | Self written | Holds and Generates Monster Cans |
+| WallScript.gd | Self written | Randomisation Of 2D Scene |
 
 # References
 * Item 1
