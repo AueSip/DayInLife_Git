@@ -21,14 +21,10 @@ Titlescreen Image
 2D Gameplay Image
 ![2DGame](./Screenshot/GameplayMonster2D.jpg)
 
-
-
 # Description of the project
-
 A Game for the Creative Coding 2026 Day In A College Students Life Assignment.
 A Monster themed game where you must fish out as many monsters from a vending machine in a set amount of time. 
 It is a chaotic arcate themed game that simulates a students life choices surrounding their precious Monster Energy!
-
 
 # Instructions for use
 Run the Game from the web browser at [Itch](https://auesip.itch.io/wheres-my-monster_)
@@ -76,72 +72,82 @@ External Feedback Loops 2
 | WallScript.gd | Self written | Randomisation Of 2D Scene |
 
 # What I am most proud of in the assignment
-
-- Each team member
-- Must be human written. Reflect on what you achieved and share it
+- Scott Fowler
+Design and Visual Cohesion. The Game is wrapped up nicely as a complete package with a core gameplay loop and two external motivation loops that compliment it.
+The visual effects and sound design using custom made sounds lead to a satisfying finish to the game.
 
 # What I learned
-
-- Each team member
-- Must be human written. Reflect on what you learned and share it
+Instantiation and Procedural features go hand in hand. With these two tricks utilised I was able to generate random variants of the game on "Start" instead of hard-coding any specific elements.
 
 # Proposal submitted earlier can go here (if there is one):
 
-## Examples of markdown:
-
-## This is how to markdown text:
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
+#Code Examples
 ```
 
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
 ```
 
+##GlobalVars
+```
 
-This is a table:
+```
 
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
+##vending_game_manager
+```
+
+```
+
+##SoundHandler
+```
+
+```
+
+##2d_minigame
+```
+
+```
+
+##end_screen
+```
+
+```
+
+##front_piece
+```
+
+```
+
+##Minigame_Coin
+```
+
+```
+
+##monster_can
+```
+
+```
+
+##physical_button
+```
+
+```
+
+##playerScript
+```
+
+```
+
+##start_screen
+```
+
+```
+
+##vending_slot
+```
+
+```
+
+##WallScript
+```
+
+```
+
