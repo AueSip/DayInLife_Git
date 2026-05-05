@@ -17,11 +17,11 @@ Class Group: TU984
 
 This is an image using a relative URL:
 Titlescreen Image
-[(./Screenshot/4Monster.jpg)]
+[![Title](./Screenshot/4Monster.jpg)]
 3D Gameplay Image
-[(./Screenshot/1Monster.jpg)]
+[![Gameplay](./Screenshot/1Monster.jpg)]
 2D Gameplay Image
-[(./Screenshot/GameplayMonster2D.png)]
+[![2DGame](./Screenshot/GameplayMonster2D.png)]
 
 
 
