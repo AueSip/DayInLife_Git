@@ -15,11 +15,11 @@ Class Group: TU984
 
 # Screenshots
 Titlescreen Image
-[![Title](./Screenshot/4Monster.jpg)]
+![Title](./Screenshot/4Monster.jpg)
 3D Gameplay Image
-[![Gameplay](./Screenshot/1Monster.jpg)]
+![Gameplay](./Screenshot/1Monster.jpg)
 2D Gameplay Image
-[![2DGame](./Screenshot/GameplayMonster2D.jpg)]
+![2DGame](./Screenshot/GameplayMonster2D.jpg)
 
 
 
