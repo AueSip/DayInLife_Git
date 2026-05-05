@@ -14,14 +14,12 @@ Class Group: TU984
 [![YouTube](./Screenshot/Thumbnail.png)](https://youtu.be/k1n3TPAd9bM?si=3BMkchFsWIXRLfMq)
 
 # Screenshots
-
-This is an image using a relative URL:
 Titlescreen Image
 [![Title](./Screenshot/4Monster.jpg)]
 3D Gameplay Image
 [![Gameplay](./Screenshot/1Monster.jpg)]
 2D Gameplay Image
-[![2DGame](./Screenshot/GameplayMonster2D.png)]
+[![2DGame](./Screenshot/GameplayMonster2D.jpg)]
 
 
 
