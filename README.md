@@ -82,12 +82,19 @@ Instantiation and Procedural features go hand in hand. With these two tricks uti
 # Proposal submitted earlier can go here (if there is one):
 
 #Code Examples
-```
-
-```
 
 ##GlobalVars
-```
+```GDScript
+extends Node
+
+class_name GlobalVars
+
+var score:int
+var coins:int
+var MonstersCollected:int
+
+func SetCoins(coin:int):
+	coins = coin
 
 ```
 
